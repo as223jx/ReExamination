@@ -26,4 +26,11 @@ public class UnitTests {
 		assertTrue(egg.cooked);
 	}
 	
+	@Test
+	public void testBoilEgg() {
+		Egg egg = new Egg();
+		egg.boil();
+		assertTrue(egg.boiled);
+		assertTrue(egg.cooked);
+	}
 }
