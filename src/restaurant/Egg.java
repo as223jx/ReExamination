@@ -4,6 +4,7 @@ public class Egg {
 	
 	boolean cooked = false;
 	boolean scrambled = false;
+	boolean boiled = true;
 	
 	public Egg() {
 		
@@ -14,5 +15,9 @@ public class Egg {
 			cooked = true;
 			scrambled = true;
 		}
+	}
+	
+	public void boil() {
+		cooked = true;
 	}
 }
