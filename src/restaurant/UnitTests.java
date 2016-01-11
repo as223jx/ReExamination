@@ -49,4 +49,11 @@ public class UnitTests {
 		egg.scramble();
 		egg.boil();
 	}
+	
+	@Test (expected = IllegalStateException.class)
+	public void testScrambleCookedEgg() {
+		Egg egg = new Egg();
+		egg.boil();
+		egg.scramble();
+	}
 }
