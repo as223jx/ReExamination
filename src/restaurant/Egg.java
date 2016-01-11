@@ -22,5 +22,6 @@ public class Egg {
 			cooked = true;
 			boiled = true;
 		}
+		else throw new IllegalStateException();
 	}
 }
