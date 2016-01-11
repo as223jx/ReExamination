@@ -18,4 +18,12 @@ public class UnitTests {
 		assertFalse(egg.cooked);
 	}
 	
+	@Test
+	public void testScrambleEgg() {
+		Egg egg = new Egg();
+		egg.scramble();
+		assertTrue(egg.scrambled);
+		assertTrue(egg.cooked);
+	}
+	
 }
