@@ -11,4 +11,11 @@ public class UnitTests {
 		Chef chef = new Chef();
 		assertNotNull(chef);
 	}
+	
+	@Test
+	public void testUncookedEgg() {
+		Egg egg = new Egg();
+		assertFalse(egg.cooked);
+	}
+	
 }
