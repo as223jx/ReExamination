@@ -3,13 +3,16 @@ package restaurant;
 public class Egg {
 	
 	boolean cooked = false;
-	boolean scrambled = true;
+	boolean scrambled = false;
 	
 	public Egg() {
 		
 	}
 	
 	public void scramble() {
-		cooked = true;
+		if(!cooked) {
+			cooked = true;
+			scrambled = true;
+		}
 	}
 }
