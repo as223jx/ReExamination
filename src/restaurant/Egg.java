@@ -15,6 +15,7 @@ public class Egg {
 			cooked = true;
 			scrambled = true;
 		}
+		else throw new IllegalStateException();
 	}
 	
 	public void boil() {
