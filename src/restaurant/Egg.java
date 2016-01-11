@@ -22,6 +22,6 @@ public class Egg {
 			cooked = true;
 			boiled = true;
 		}
-		else throw new IllegalStateException();
+		else throw new IllegalStateException("Egg has already been cooked!");
 	}
 }
