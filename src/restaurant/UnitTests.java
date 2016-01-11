@@ -3,6 +3,7 @@ package restaurant;
 import static org.junit.Assert.*;
 
 import org.junit.Test;
+import org.mockito.Mockito;
 
 public class UnitTests {
 	
@@ -32,5 +33,13 @@ public class UnitTests {
 		egg.boil();
 		assertTrue(egg.boiled);
 		assertTrue(egg.cooked);
+	}
+	
+	@Test
+	public void testChefScramblesEgg() {
+		Chef chef = new Chef();
+		Egg egg = Mockito.mock(Egg.class);
+		chef.scrambleEgg(egg);
+		Mockito.verify(egg, Mockito.times(1)).scramble();
 	}
 }
