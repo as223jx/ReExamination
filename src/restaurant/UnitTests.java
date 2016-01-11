@@ -42,4 +42,11 @@ public class UnitTests {
 		chef.scrambleEgg(egg);
 		Mockito.verify(egg, Mockito.times(1)).scramble();
 	}
+	
+	@Test (expected = IllegalStateException.class)
+	public void testBoilCookedEgg() {
+		Egg egg = new Egg();
+		egg.scramble();
+		egg.boil();
+	}
 }
