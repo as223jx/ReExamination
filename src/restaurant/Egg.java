@@ -15,7 +15,7 @@ public class Egg {
 			cooked = true;
 			scrambled = true;
 		}
-		else throw new IllegalStateException();
+		else throw new IllegalStateException("Egg has already been cooked!");
 	}
 	
 	public void boil() {
