@@ -6,4 +6,8 @@ public class Chef {
 		
 	}
 	
+	public void scrambleEgg(Egg egg) {
+		egg.scramble();
+	}
+	
 }
